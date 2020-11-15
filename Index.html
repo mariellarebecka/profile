@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="https://www.mariellalundman.com/wp-content/uploads/2020/02/M_LOGO.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariella Lundman</title>
+</head>
+
+<body>
+
+<header>
+
+<img src="https://www.mariellalundman.com/wp-content/uploads/2020/07/ml_2.jpg" alt="mariellalundman" title="mariellalundman" width= 100%>
+
+<h1>Mariella Lundman</h1>
+<h2>UX Design Student</h2>
+
+</header>
+
+<section>
+	<h4>
+<p>Welcome to Mariellas profile page. Mariella's birthday is in
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 27, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+  <a href="https://www.apple.com/" > Buy her something pretty!</a>
+	</h4>
+
+<br>
+
+<p>Birthdays are not the only thing Mariella likes. She also enjoys painting, playing the piano, watching Netflix and having board game nights. These are Mariella's favorite board games:.
+  <li><a href="https://boardgamegeek.com/boardgame/266507/clank-legacy-acquisitions-incorporated"   target="_blank" > Clank Legacy</a></li>
+    <li><a href="https://boardgamegeek.com/boardgame/266192/wingspan"   target="_blank" > Wingspan</a></li>
+  <li><a href="https://boardgamegeek.com/boardgame/199042/harry-potter-hogwarts-battle"   target="_blank" > Harry Potter: Hogwarts Battle</a></li>
+</p>
+
+
+
+<p>Did you find this information interesting?
+<button type="button" onclick="alert('Woho :)')" >Yes</button>
+<button type="button" onclick="alert('Thank you for your opinion! Mariella will work on more interesting information ASAP.')" >No</button>
+<p>
+
+</section>
+</body>
+</html>
+
+<!-- 
+
+<button type="button" onclick="alert('hello world')" >Buy her a gift!</button>
+
+
+<h4>header 4</h4>
+<p>text</p>
+<b>Bold</b>
+<i>Italic</i>
+<strong>Strong</strong>
+
+ -->
